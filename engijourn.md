@@ -25,3 +25,12 @@ console.log(merged.get(3)) // three
 
 Link to MDN:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+
+I also learned about the ability to swap array elements in place with ES6. Prior to this, I would always have to set up a temporary variable to hold one element, set the element at that index to the element at the 2nd index, then set the element at the 2nd index to the temporary variable's value. This new way is much cleaner and can take care of that in one line.
+
+const arr = [1, 2, 3, 4, 5];
+
+[(arr[0], arr[3])] = [arr[3], arr[0]]
+
+console.log(arr) // [4, 2, 3, 1, 5]
+
